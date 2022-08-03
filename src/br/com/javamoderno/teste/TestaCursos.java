@@ -2,8 +2,10 @@ package br.com.javamoderno.teste;
 
 import br.com.javamoderno.main.Curso;
 
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.OptionalDouble;
 import java.util.stream.Collectors;
 
 import static java.util.Comparator.comparing;
@@ -58,11 +60,10 @@ public class TestaCursos {
         System.out.println(Mapcurso);
 
         // o orElse nesse caso irá trazer outro curso, um curso do index 0 da lista de cursos
-     cursos.stream()
+        cursos.stream()
                 .filter(c -> c.getAlunos() <= 10)
                 .findAny()
                 .orElse(cursos.get(0));
-
 
 
     }

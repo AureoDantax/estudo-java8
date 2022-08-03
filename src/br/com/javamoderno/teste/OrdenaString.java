@@ -3,7 +3,6 @@ package br.com.javamoderno.teste;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Locale;
 import java.util.function.Consumer;
 
 public class OrdenaString {
@@ -50,7 +49,7 @@ public class OrdenaString {
 
         str.forEach(s1 -> System.out.println(s1));
         // com method reference:
-        str.forEach(System.out :: print);
+        str.forEach(System.out::println);
 
         /*o Comparator possui o metodo comparing que recebe uma implementação da interface Function, onde voce pode passar
         um lambda como argumento para simplificar a comparação */
